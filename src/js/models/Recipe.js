@@ -28,4 +28,4 @@ export default class Recipe {
     calcServings() {
         this.servings = 4;
     }
-}
+};
