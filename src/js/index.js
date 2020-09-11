@@ -133,15 +133,15 @@ const controlLike = () => {
 
         likesView.toggleLikeBtn(true);
 
-        console.log(state.likes)
+        likesView.renderLike(newLike);
+
     } else {
+
         state.likes.deleteLike(currentID)
 
         likesView.toggleLikeBtn(false);
-
-        console.log(state.likes)
     }
-    likesView.toggleLikeMenu(state.likes.getNumberLikes());
+    likesView.toggleLikeMenu(state.likes.getNumLikes());
 };
 
 elements.recipe.addEventListener('click', e => {
